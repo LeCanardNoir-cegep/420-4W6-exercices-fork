@@ -1,4 +1,6 @@
+import { ArtistService } from './artist.service';
 import { Component } from '@angular/core';
+import { Artist } from './artist';
 
 @Component({
   selector: 'app-root',
@@ -7,24 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'laboratoire';
-  artistName = "";
+  //artistName = "";
 
-  artists: Artist[] = [
-    new Artist("The Black Keys"),
-    new Artist("MorMor"),
-    new Artist("Parcels"),
-    new Artist("Glass Animals"),
-    new Artist("Mating Ritual"),
-  ];
+  constructor(public artistServ:ArtistService){}
 
-  addArtist(): void {
-    this.artists.push(new Artist(this.artistName));
-    this.artistName = "";
-  }
-}
-
-export class Artist {
-  constructor(
-    public name: string
-  ) { }
+  artists: Artist[] = this.artistServ.artists;
+  
 }

@@ -1,0 +1,7 @@
+<form (ngSubmit)="add(artistname)">
+    <div class="form-group">
+    <input type="email" class="form-control" name="artistname" placeholder="Nouvel Artiste" [(ngModel)]="artistname">
+    </div>
+    <p *ngIf="artistname">Dernière Entré: {{artistname}}</p>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>
