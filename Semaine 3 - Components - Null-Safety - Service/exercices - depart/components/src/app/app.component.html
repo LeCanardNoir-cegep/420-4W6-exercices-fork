@@ -16,11 +16,8 @@
     </div>
 
     <div class="col-9" style="display: flex; flex-wrap: wrap; height: 400px; background-color: rgb(51, 73, 133);">
-
       <div class="card col-2" style="margin: 10px; height: 120px;" *ngFor="let artist of artists">
-        <div class="card-body">
-          {{artist.name}}
-        </div>
+        <app-artist [artist]="artist"></app-artist>
       </div>
 
     </div>

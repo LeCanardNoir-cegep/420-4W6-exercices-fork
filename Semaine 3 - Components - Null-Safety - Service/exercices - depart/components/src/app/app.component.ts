@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'laboratoire';
   artistName = "";
 
-  artists: Artist[] = [
+  artists?: Artist[] = [
     new Artist("The Black Keys"),
     new Artist("MorMor"),
     new Artist("Parcels"),
@@ -18,7 +18,7 @@ export class AppComponent {
   ];
 
   addArtist(): void {
-    this.artists.push(new Artist(this.artistName));
+    this.artists!.push(new Artist(this.artistName));
     this.artistName = "";
   }
 }

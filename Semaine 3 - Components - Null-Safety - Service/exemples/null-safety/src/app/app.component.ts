@@ -28,12 +28,20 @@ export class AppComponent {
     this.nullTypeCat = new Cat('Grigri');
     this.optionalCat = new Cat('Grigri jr.');
 
+    /*this.nullTypeCat = new Cat();
+    this.nullTypeCat.name = null;
+    this.optionalCat = new Cat();
+    this.optionalCat.name = null;*/
+
+
   }
 
 }
 
 class Cat {
 
+  /*public name!:string | null;
+  public age!:number | null;*/
   constructor(
     public name: string
   ) { }
