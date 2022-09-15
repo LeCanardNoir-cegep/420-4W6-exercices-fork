@@ -8,8 +8,8 @@
       <div class="side">
           <nav class="dr-menu">
               <ul>
-                  <li><a class="scroll dr-icon dr-icon-user" href="#artistes">Artistes</a></li>
-                  <li><a class="scroll dr-icon dr-icon-camera" href="#bio">Bio</a></li>
+                  <li><a class="scroll dr-icon dr-icon-user" href="">Artistes</a></li>
+                  <li><a class="scroll dr-icon dr-icon-camera" href="bio/1">Bio</a></li>
               </ul>
           </nav>
       </div>
@@ -28,12 +28,14 @@
 
 </div>
 
+<router-outlet></router-outlet>
+
 <!-- ================================================================================================= -->
 <!-- ================================================================================================= -->
 <!--                       Remplacer à partir d'ici par un <router-outlet>                             -->
 <!-- ================================================================================================= -->
 <!-- ================================================================================================= -->
-
+<!--
 <div class="about" id="artistes">
   <div class="container">
 
@@ -58,4 +60,4 @@
   </div>
 </div>
 
-<artist-bio [artist]="selectedArtist"></artist-bio>
+<artist-bio [artist]="selectedArtist"></artist-bio>-->
