@@ -1,0 +1,13 @@
+<h1>Google maps</h1>
+<google-map 
+[center]="center"
+[zoom]="zoom"
+width="700"
+height="300">
+<map-marker 
+*ngFor="let marker of markerPositions"
+[position]="marker">
+</map-marker>
+</google-map>
+
+<h2>{{ myDate | date }}</h2>
