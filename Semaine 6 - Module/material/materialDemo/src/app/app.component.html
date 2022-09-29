@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <mat-icon aria-hidden="false" aria-label="Super icon" fontIcon="album"></mat-icon>
+  <span>Super Musique Infinie</span>
+</mat-toolbar>
+
+<div class="wrapper">
+  <mat-card id="artistForm">
+    <form>
+      <mat-form-field>
+        <!--      <mat-label>Nouvel artiste</mat-label>-->
+        <input matInput placeholder="Nouvel artiste" type="text">
+      </mat-form-field>
+      <button (click)="addArtist()" mat-raised-button color="primary">Primary</button>
+    </form>
+  </mat-card>
+</div>
+<main class="wrapper">
+  <router-outlet></router-outlet>
+</main>
